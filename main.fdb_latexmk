@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1749136075.7038 "main.tex" "main.pdf" "main" 1749136077.54056 0
+["pdflatex"] 1749156112.08703 "main.tex" "main.pdf" "main" 1749156113.9831 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1742685315 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1742685315 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -37,6 +37,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1742685315 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1742685315 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1742685315 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1742685315 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1742685315 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1742685315 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1742685315 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -182,8 +183,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1748995755 328487 af9ee1ad12a077e0a84d12db04b2ed50 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1748995741 2653825 c0f7351c7fc2eb02d462b2803ca8fd8a ""
-  "main.aux" 1749136077.42166 2417 ebd552364def427b91878519e6317227 "pdflatex"
-  "main.tex" 1749136075.32969 15939 dfb8a35463a548d0c517f27ce58fe1bd ""
+  "main.aux" 1749156113.84476 2546 3c83559b1c30cfd4bfb30fc3e8c3c4a4 "pdflatex"
+  "main.tex" 1749156110.62976 17637 38aba70cddafc87de6ff9e30c7839ef3 ""
   (generated)
   "main.aux"
   "main.log"

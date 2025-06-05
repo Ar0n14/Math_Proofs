@@ -5,8 +5,8 @@
 \usepackage[dutch]{babel}
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 
+\theoremstyle{definition}
 \newtheorem*{Stelling}{Stelling}
-\newtheorem*{Stappenplan}{stappenplan}
 
 \binoppenalty=10000
 \relpenalty=10000 
@@ -161,6 +161,26 @@ We verdelen $\left[0,b\right]$ in $n$ deelintervallen met breedte $\Delta x = \f
       \end{align*}
   \end{enumerate}
 \end{proof}
+
+\section{Hoofdstelling van de integraalrekening}
+\begin{Stelling}
+  Als $f$ continu is in $\left[a,b\right]$, dan geldt in $\left[a,b\right]$: $I_a^{'} \left(x\right) = f\left(x\right)$.
+\end{Stelling}
+\begin{proof}
+  We bewijzen dat $\forall x \in \left[a,b\right]: \displaystyle\lim_{\Delta x \to 0} \dfrac{I_a\left(x+\Delta x\right) - I_a\left(x\right)}{\Delta x} = f\left(x\right)$
+\begin{align*}
+  \lim_{\Delta x \to 0} \dfrac{I_a\left(x+\Delta x\right) - I_a\left(x\right)}{\Delta x} &= \frac{\displaystyle\int_{a}^{x+\Delta x}f\left(t\right)\, dt - \displaystyle\int_{a}^{x}f\left(t\right)\, dt}{\Delta x}\\
+                                                                                         &= \frac{\displaystyle\int_{a}^{x+\Delta x}f\left(t\right)\, dt + \displaystyle\int_{x}^{a}\left(t\right)\, dt}{\Delta x}\\
+                                                                                         &= \frac{\displaystyle\int_{x}^{x+\Delta x}f\left(t\right)\, dt}{\Delta x}\\
+                                                                                         &=\frac{\left(x+\Delta x -x\right)\cdot f\left(c\right)}{\Delta x}\\
+                                                                                         &=f\left(c\right) \qquad \text{met } c\in \left[x, x+\Delta x\right],\\
+                                                                                         \intertext{dus}
+  \displaystyle\lim_{\Delta x \to 0} \dfrac{I_a\left(x+\Delta x\right) - I_a\left(x\right)}{\Delta x} &= \lim_{\Delta x \to 0} f\left(c\right)\\
+                                                                                                      &=f\left(x\right)
+\end{align*}
+\end{proof}
+
+
 \section{Oppervlakte van een cirkel p.119}
 \begin{Stelling}
     De oppervlakte van een cirkel met straal $r$ is $\pi r^2$
