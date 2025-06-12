@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage{graphicx, amsmath, amsthm, tikz, pgfplots, tabularx}
+\usepackage{graphicx, amsmath, amsthm, amssymb, tikz, pgfplots, tabularx}
 \usepackage{mathrsfs}
 \pgfplotsset{compat = newest}
 \usepackage[dutch]{babel}
@@ -162,7 +162,7 @@ We verdelen $\left[0,b\right]$ in $n$ deelintervallen met breedte $\Delta x = \f
   \end{enumerate}
 \end{proof}
 
-\section{Hoofdstelling van de integraalrekening}
+\section{Hoofdstelling van de integraalrekening p.33}
 \begin{Stelling}
   Als $f$ continu is in $\left[a,b\right]$, dan geldt in $\left[a,b\right]$: $I_a^{'} \left(x\right) = f\left(x\right)$.
 \end{Stelling}
@@ -179,8 +179,44 @@ We verdelen $\left[0,b\right]$ in $n$ deelintervallen met breedte $\Delta x = \f
                                                                                                       &=f\left(x\right)
 \end{align*}
 \end{proof}
-
-
+\section{Primitieve functies p.34}
+\begin{Stelling}
+  Primitieve functies verschillen slechts in een constante term.
+\end{Stelling}
+\begin{proof}
+  $F_1$ en $F_2$ zijn primitieve functies van $f$. Dan is
+  \begin{align*}
+    DF_1 &= f\\
+         &\text{en}\\
+    DF_2&=f\\
+         &\Downarrow\\
+    DF_2-DF_1 &= 0\\
+              &\Downarrow\\
+    D\left(F_2-F_1\right)&=0\\
+                        &\Downarrow\\
+      F_2-F_1&=C\\
+             &\Downarrow\\
+      F_2&=F_1+C \quad \text{met } C\in\mathbb{R}    
+  \end{align*}
+\end{proof}
+\section{Bepaalde integralen p.36}
+\begin{Stelling}
+ Als $f$ continu is in $\left[a,b\right]$ en $F$ is een primitieve functie van $f$, dan geldt:
+ $$\displaystyle\int_{a}^{b}f\left(x\right)\,dx = \left[F\left(x\right)\right]_a^b = F\left(b\right) - F\left(a\right) $$
+\end{Stelling}
+\begin{proof}
+  $I_a\left(x\right)$ is een primitieve functie, dus $I_a\left(x\right) = F\left(x\right) + C.$\\
+  We stellen $x=a$:
+  \begin{align*}
+    I_a\left(a\right)=\displaystyle\int_{a}^{a}f\left(t\right)\,dt &= F\left(a\right)+C\\
+                                             &\Downarrow\\
+    0&=F\left(a\right)+C\\
+                                             &\Downarrow\\
+    C &= -F\left(a\right) \quad \text{dus: } I_a\left(x\right) = F\left(x\right)-F\left(a\right).\\
+    \intertext{Dus, }
+    I_a\left(b\right) = \displaystyle\int_{a}^{b}f\left(t\right)\,dt = F\left(b\right)-F\left(a\right)
+  \end{align*}
+\end{proof}
 \section{Oppervlakte van een cirkel p.119}
 \begin{Stelling}
     De oppervlakte van een cirkel met straal $r$ is $\pi r^2$
@@ -222,7 +258,8 @@ Als $x=r$, dan is $r\sin t = r$ of $t=\frac{\pi}{2}$.\\
 Dus $$A = 4\cdot\int_0^r \sqrt{r^2-x^2}\, dx =4r^2\int_0^\frac{\pi}{2}\cos^2t\,dt = 4r^2\int_0^\frac{\pi}{2} \frac{1+\cos2t}{2}\,dt = 2r^2\left[t + \frac{\sin2t}{2}\right]_0^\frac{\pi}{2}$$ $$=\\ 2r^2\cdot\frac{\pi}{2} = \pi r^2.$$
 
 
-\end{proof}\newpage
+\end{proof}
+
 \section{Oppervlakte van een cirkelsegment p.121}
 \begin{Stelling}
 De oppervlakte van een cirkelsegment met straal $r$ en middelpuntshoek $\vartheta$ is $\frac{r^2}{2}\left(\vartheta-\sin\vartheta\right).$
