@@ -255,7 +255,8 @@ Stel $x=r\sin t$ en $t\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$, dan is $dx 
 \\ Dan is $$\sqrt{r^2-x^2}\,dx = \sqrt{r^2-r^2\sin^2t}\, dx=r\sqrt{\cos^2t}\cdot r\cos t\,dt = r^2\cos^2t\,dt.$$
 Als $x=0$, dan is $r\sin t = 0$ of $t=0$.\\
 Als $x=r$, dan is $r\sin t = r$ of $t=\frac{\pi}{2}$.\\
-Dus $$A = 4\cdot\int_0^r \sqrt{r^2-x^2}\, dx =4r^2\int_0^\frac{\pi}{2}\cos^2t\,dt = 4r^2\int_0^\frac{\pi}{2} \frac{1+\cos2t}{2}\,dt = 2r^2\left[t + \frac{\sin2t}{2}\right]_0^\frac{\pi}{2}$$ $$=\\ 2r^2\cdot\frac{\pi}{2} = \pi r^2.$$
+Dus $$A = 4\cdot\int_0^r \sqrt{r^2-x^2}\, dx =4r^2\int_0^\frac{\pi}{2}\cos^2t\,dt = 4r^2\int_0^\frac{\pi}{2} \frac{1+\cos2t}{2}\,dt = 2r^2 \left(\displaystyle\int_{0}^{\frac{\pi}{2}}1\, dt +\displaystyle\int_{0}^{\frac{\pi}{2}}\cos2t\,dt\right)$$\\
+$$= 2r^2\left[t + \frac{\sin2t}{2}\right]_0^\frac{\pi}{2}= 2r^2\cdot\frac{\pi}{2} = \pi r^2.$$
 
 
 \end{proof}
