@@ -169,7 +169,7 @@ We verdelen $\left[0,b\right]$ in $n$ deelintervallen met breedte $\Delta x = \f
 \begin{proof}
   We bewijzen dat $\forall x \in \left[a,b\right]: \displaystyle\lim_{\Delta x \to 0} \dfrac{I_a\left(x+\Delta x\right) - I_a\left(x\right)}{\Delta x} = f\left(x\right)$
 \begin{align*}
-  \lim_{\Delta x \to 0} \dfrac{I_a\left(x+\Delta x\right) - I_a\left(x\right)}{\Delta x} &= \frac{\displaystyle\int_{a}^{x+\Delta x}f\left(t\right)\, dt - \displaystyle\int_{a}^{x}f\left(t\right)\, dt}{\Delta x}\\
+  \dfrac{I_a\left(x+\Delta x\right) - I_a\left(x\right)}{\Delta x} &= \frac{\displaystyle\int_{a}^{x+\Delta x}f\left(t\right)\, dt - \displaystyle\int_{a}^{x}f\left(t\right)\, dt}{\Delta x}\\
                                                                                          &= \frac{\displaystyle\int_{a}^{x+\Delta x}f\left(t\right)\, dt + \displaystyle\int_{x}^{a}\left(t\right)\, dt}{\Delta x}\\
                                                                                          &= \frac{\displaystyle\int_{x}^{x+\Delta x}f\left(t\right)\, dt}{\Delta x}\\
                                                                                          &=\frac{\left(x+\Delta x -x\right)\cdot f\left(c\right)}{\Delta x}\\
